@@ -1,5 +1,4 @@
 const request = require("request");
-console.log(process.env.WEATHERSTACK_KEY);
 
 const forecast = (latitude, longitude, callback) => {
   const url = `http://api.weatherstack.com/current?access_key=${process.env.WEATHERSTACK_KEY}&query=${latitude},${longitude}&units=f`;
